@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cd4d5fc4-e4a0-4722-8bad-e933528b67f9" name="ucd-基本功能" linkedPackageId="a399531c-048c-4f5a-9b02-d607c41a8da9" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="2f65dff3-b87e-4b95-b3d5-6c4426dbeadd" name="用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0226d435-347e-4608-96da-60541662bc2b" />
+        <targetEnds>
+          <association Id="8534b1d1-b9e8-4639-a660-46695af35b08" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="影像数据集管理" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="63e07a6d-0455-4699-81ca-97acaf37e41b" LastKnownName="地图模板管理（工程管理）" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fae8141-2179-46d2-b9c5-ccad60b09ac3" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6c45b41c-34c7-46eb-bf3f-2c4893334c9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b0e8ecd-d09c-4286-9ab6-c3e82bf52316" name="影像数据集管理" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7a125d1c-c6a2-4cd7-9286-e6cf063d8b8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="78c757a9-fc55-4a99-95fd-fbe23e527489" />
+          </association>
+          <association Id="570c59ee-05f2-4268-a764-8cb8546de38d" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="影像数据集同步显示" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6bedffae-0dc1-4752-bd72-e322928aaf12" LastKnownName="地图输出为图片" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="222170b6-78d7-4ca3-a76a-b6c83cb01a7c" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c973a115-eb77-422f-81c6-fe246a2f6ba1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9e3aeeec-ad78-427d-8532-d7fbd2cee88f" name="影像数据集同步显示" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0397f93-c75d-4f23-8ea8-056c89ff4134" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e494194-bbb9-454f-86b6-9ce1e3f1309a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="63e07a6d-0455-4699-81ca-97acaf37e41b" name="地图模板管理（工程管理）" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f05366d-182e-415e-9394-0b1366ec0f16" />
+        <additions>
+          <include Id="98ddc6b3-b8a0-49bc-8cfb-c4cc4fb1aa4a">
+            <useCaseMoniker Id="f0a04567-ecba-4d6b-8336-3586f8b4a7f0" LastKnownName="地图文档打开" />
+            <elementDefinition Id="402a9a92-0053-4944-88a0-13ed9ff0c633" />
+          </include>
+          <include Id="6633c0af-a9f5-4f37-bc37-6133b388b315">
+            <useCaseMoniker Id="364de024-4216-49f4-9bee-92a3848cd6bb" LastKnownName="地图文档保存" />
+            <elementDefinition Id="c97e8f29-7d14-46af-8138-74c585718edf" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6bedffae-0dc1-4752-bd72-e322928aaf12" name="地图输出为图片" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47789398-3cc6-4819-92cf-11f6f753e051" />
+        <additions>
+          <include Id="817377a3-2514-49af-9a4b-49cb956e20aa">
+            <useCaseMoniker Id="8b446a7b-2a6d-4ce2-9b22-c0aa42781320" LastKnownName="全副输出" />
+            <elementDefinition Id="7dfc9516-efb5-43f6-a621-483fa06ff1be" />
+          </include>
+          <include Id="6e8fa46d-7a06-4400-ba3f-d167b9def8b1">
+            <useCaseMoniker Id="5323dd76-871e-42ac-8653-9926a9793bf0" LastKnownName="bmp输出" />
+            <elementDefinition Id="6ac92c7c-a864-4c55-864a-51da4dd27f58" />
+          </include>
+          <include Id="3bd3ab71-163c-4539-b18e-ddea830dafa1">
+            <useCaseMoniker Id="8961f699-cc9c-4c99-a26d-490352c8c30f" LastKnownName="jpg输出" />
+            <elementDefinition Id="d60d2664-fad5-4939-8399-415f8381e068" />
+          </include>
+          <include Id="e020b9e3-9a66-45e7-941a-f5f088738f89">
+            <useCaseMoniker Id="7eaf759a-329d-4e2c-b2cb-816a1f5e3b03" LastKnownName="tif输出" />
+            <elementDefinition Id="72ef7ee7-379d-49b3-9c7f-e01c68a0624a" />
+          </include>
+          <include Id="6eb0ffeb-474c-4383-a114-6b0ec75c03c6">
+            <useCaseMoniker Id="12b991ec-aa44-4e94-8341-c1f2d9fd54f2" LastKnownName="指定范围输出" />
+            <elementDefinition Id="cd02d6a5-c77f-4050-9463-c665d80e31d9" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b4451e9b-b398-40cb-a7a7-4bce52171ae9" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb072caf-7c29-4e56-98f4-1d76f65dd5bd" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0a04567-ecba-4d6b-8336-3586f8b4a7f0" name="地图文档打开" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cad3e244-6ca4-4616-974f-3a580f53a451" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="364de024-4216-49f4-9bee-92a3848cd6bb" name="地图文档保存" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eab2814f-14ee-4df9-aa6e-25f0ec34a13f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5323dd76-871e-42ac-8653-9926a9793bf0" name="bmp输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c39bcf4-bb0d-432e-8df0-51a8f378e37d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8961f699-cc9c-4c99-a26d-490352c8c30f" name="jpg输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9379c8b1-d44e-46f0-a705-da1932837004" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7eaf759a-329d-4e2c-b2cb-816a1f5e3b03" name="tif输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="566feccf-421c-43e7-a5a6-85159fd0ee52" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="12b991ec-aa44-4e94-8341-c1f2d9fd54f2" name="指定范围输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="82be0fe8-0525-471b-b627-2a675146c374" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b446a7b-2a6d-4ce2-9b22-c0aa42781320" name="全副输出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ebe75662-b74a-495f-83cc-90545eff812b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a399531c-048c-4f5a-9b02-d607c41a8da9" name="MSARProMD">
+    <elementDefinition Id="8b6555f7-f3ee-4297-97bd-e98d82435e9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a75c73a4-65e5-4306-806f-0008e13c6c60">
+        <profileInstance Id="280e3a11-3cd3-4eec-86ee-750fdd416480" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f7d1eb8a-7320-4e87-9829-14e49fea4ee6">
+        <profileInstance Id="8eb165c7-3ebc-469d-9a76-047d96bcaa7e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

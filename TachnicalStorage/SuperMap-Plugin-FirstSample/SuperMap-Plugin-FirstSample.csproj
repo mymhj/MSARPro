@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">X86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFEF0B7F-D293-4663-9C67-F643A18E9710}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperMap_Plugin_FirstSample</RootNamespace>
+    <AssemblyName>SuperMap-Plugin-FirstSample</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|X86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\Plugins\SuperMap-Plugin-FirstSample\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|X86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\Plugins\SuperMap-Plugin-FirstSample\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SuperMap.Data">
+      <HintPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\SuperMap.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperMap.Desktop.Common">
+      <HintPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\SuperMap.Desktop.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperMap.Desktop.Core">
+      <HintPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\SuperMap.Desktop.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperMap.Desktop.UI.Controls">
+      <HintPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\SuperMap.Desktop.UI.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SuperMap.UI.Controls">
+      <HintPath>D:\Program Files\SuperMap\SuperMap iDesktop 8C\Bin\SuperMap.UI.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DesktopPlugin.cs" />
+    <Compile Include="MyCtrlAction.cs" />
+    <Compile Include="MyControl.cs" />
+    <Compile Include="MyControl.Designer.cs">
+      <DependentUpon>MyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MyCtrlActionCheckBox.cs" />
+    <Compile Include="MyCtrlActionColorButton.cs" />
+    <Compile Include="MyCtrlActionNum.cs" />
+    <Compile Include="MyCtrlActionTextBox.cs" />
+    <Compile Include="MyCtrlActionComboBox.cs" />
+    <None Include="SuperMap-Plugin-FirstSample.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyControl.resx">
+      <DependentUpon>MyControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)$(TargetName).config" "$(TargetDir)../../../WorkEnvironment/Default/$(TargetName).config" /y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

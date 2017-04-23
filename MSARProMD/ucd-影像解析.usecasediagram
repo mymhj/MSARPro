@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="698e2de1-a5e3-48c1-855e-f9e62dc41006" name="ucd-影像解析" linkedPackageId="c8dfb5fc-9f64-4c1d-8ce5-35465b8ea84d" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="41ede7fd-1c94-4aca-8d51-4fb8a0b0c3e4" name="用户1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ce02b4e9-70af-497a-b474-d139f84d2bb7" />
+        <targetEnds>
+          <association Id="16d38f42-eb12-490a-b6d4-7ff0e8b09710" isDerived="false" sourceEndRoleName="用户1" targetEndRoleName="兴趣区选取" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="947ce201-a369-499f-ac3b-8cdd807e26c9" LastKnownName="兴趣区选取" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3845f898-e4ce-42e5-8060-4c5eb06b3928" name="用户1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7dc4416-aa0f-499b-b386-62514d5ca59e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4e4fe56-8955-4758-b8b5-d9782cfac935" name="兴趣区选取" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e4311c3-0290-4ee2-980f-cfe1ea983e13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="13dc33ba-adc1-4fb5-b9ab-94da3a9f6b3b" />
+          </association>
+          <association Id="b425337f-7227-45d0-bbdc-5ac35ef08815" isDerived="false" sourceEndRoleName="用户1" targetEndRoleName="兴趣区栅格统计" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d38503bc-61eb-4d48-aef2-15cbd23d21b1" LastKnownName="兴趣区栅格统计" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55f387e4-f0f2-422d-b64f-b7ec87969487" name="用户1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="869e0174-a053-493d-a1db-32617f4ca2f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1a3a454-c8bb-47f5-be2d-29685c298192" name="兴趣区栅格统计" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e2eb671-a00f-44ea-8762-8e94bc395a03" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14c3889c-66e5-4870-9900-e847173370c1" />
+          </association>
+          <association Id="839f4d52-89ec-454b-9e94-c843c950132a" isDerived="false" sourceEndRoleName="用户1" targetEndRoleName="图像裁剪" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c284c516-20dc-4fcb-b5ca-ff785bb9eb30" LastKnownName="图像裁剪" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="195e2b82-cf90-43d5-98f2-730216de752e" name="用户1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aa498cfb-93bc-46cf-bbe1-5f8a5b1bbb75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="863e6ec1-6e5f-4979-8fda-0b9cd0ba0ff7" name="图像裁剪" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8420aa14-196f-4178-a8f9-0727c994de4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0468dbf7-c7a2-4d30-bd0b-0e3d11abe3fe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c3853c38-3fc5-4c00-8532-635bb653c74f" name="线选取工具" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03044725-88cf-4289-93dc-85f00afe6801" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="efe70f9b-1a4c-4f1e-a011-940b5ab44e5a" name="多边形选取工具" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a9a2937e-7039-419d-993f-c44974afc203" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3ffb5ead-6793-4b8e-a753-523f84113139" name="矩形选取工具" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e2a04fe-9f1b-4f6d-88f6-002945929873" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2cf2374e-61c9-4c46-b366-4e76262f68d9" name="圆选取工具" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4d209bad-670c-4bfa-b636-78f5274a2c21" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="947ce201-a369-499f-ac3b-8cdd807e26c9" name="兴趣区选取" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="02bbf631-b17a-435b-8bab-636332f09b37" />
+        <additions>
+          <include Id="b8bb0a48-09ec-44f1-89ea-0d09832198a6">
+            <useCaseMoniker Id="c3853c38-3fc5-4c00-8532-635bb653c74f" LastKnownName="线选取工具" />
+            <elementDefinition Id="f633a4e2-961f-4881-83c7-85179e1ce69b" />
+          </include>
+          <include Id="7181926f-f51d-4b94-843c-ede7e704f6c5">
+            <useCaseMoniker Id="3ffb5ead-6793-4b8e-a753-523f84113139" LastKnownName="矩形选取工具" />
+            <elementDefinition Id="5f7e090d-ef96-416e-be42-9a3e37bfecc4" />
+          </include>
+          <include Id="9e103e7f-d405-4e0a-acc3-e38e82da8b4b">
+            <useCaseMoniker Id="2cf2374e-61c9-4c46-b366-4e76262f68d9" LastKnownName="圆选取工具" />
+            <elementDefinition Id="11108863-a818-450e-9e3e-004b15802183" />
+          </include>
+          <include Id="a04a7886-7504-422c-b3b9-437e9d4e2b80">
+            <useCaseMoniker Id="efe70f9b-1a4c-4f1e-a011-940b5ab44e5a" LastKnownName="多边形选取工具" />
+            <elementDefinition Id="1474099c-1e0b-491b-b83a-2f1ec3c8eb7b" />
+          </include>
+          <include Id="fe53765e-c480-444a-b4f6-dbb331e3a390">
+            <useCaseMoniker Id="4985a18d-a1b8-4c59-9588-46a65fd99007" LastKnownName="兴趣区显示" />
+            <elementDefinition Id="73b3b45d-1698-4e62-8e55-4080162a8dfe" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c284c516-20dc-4fcb-b5ca-ff785bb9eb30" name="图像裁剪" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6e84bed8-8e85-467a-91ed-523ea4be231d" />
+        <additions>
+          <include Id="9b51656f-405f-46bb-8a6b-d612867a6de1">
+            <useCaseMoniker Id="60e7c568-3ead-4b6e-be09-8cc14fc0d449" LastKnownName="行列号裁剪" />
+            <elementDefinition Id="ab1645db-0eae-4a1c-9ebf-fc3251e61fc4" />
+          </include>
+          <include Id="8ea3b4cb-b54a-413a-bee9-75b4e816461b">
+            <useCaseMoniker Id="38404397-7e7d-40b1-8b0e-ad66fae65616" LastKnownName="地理坐标位置裁剪" />
+            <elementDefinition Id="10d05eb9-66a3-428e-968e-ebdfb3b5ec3b" />
+          </include>
+          <include Id="00f051f0-5d26-4869-9ab9-455ff191c6b5">
+            <useCaseMoniker Id="a9199cab-9d9e-467f-a796-90a16c36fd99" LastKnownName="多边形裁剪" />
+            <elementDefinition Id="3a5eb56b-63d2-467f-ba84-814543c96155" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d38503bc-61eb-4d48-aef2-15cbd23d21b1" name="兴趣区栅格统计" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11021289-4063-4805-be33-470fe13105f0" />
+        <additions>
+          <include Id="7b691218-53f2-4b2a-972c-9700282664a4">
+            <useCaseMoniker Id="21079a99-5ee0-4cba-9568-e622fbebc523" LastKnownName="线选中区统计" />
+            <elementDefinition Id="1e6b0d18-47d2-43fc-baaf-ef08b328d1ed" />
+          </include>
+          <include Id="acb94cae-83f8-45be-9de8-53180b69dbc8">
+            <useCaseMoniker Id="c6571449-500b-4df4-88e8-5d84bb79245c" LastKnownName="多边形选中区统计" />
+            <elementDefinition Id="6a0bab10-2d50-4530-87c7-dee0a6cbe1a6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4985a18d-a1b8-4c59-9588-46a65fd99007" name="兴趣区显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6dd4fe82-6a68-42b3-9b6a-5a61b581e3e0" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="21079a99-5ee0-4cba-9568-e622fbebc523" name="线选中区统计" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4c042d3-c63b-46c9-b91b-09a7fc84da69" />
+        <suppliersInternal>
+          <dependency Id="ddb1de3a-d1f5-461b-b7ae-d69749360954">
+            <useCaseMoniker Id="058c13bc-c559-41cb-8331-630979a15a91" LastKnownName="最大、最小、均值、方差、直方图显示" />
+            <elementDefinition Id="8c5bb0c0-0cd1-4bda-ad0a-4a1029e0d70d" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c6571449-500b-4df4-88e8-5d84bb79245c" name="多边形选中区统计" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d42db482-57f9-4a04-865f-e58a4b338a32" />
+        <suppliersInternal>
+          <dependency Id="8bcff829-63b1-4a22-80e5-8641b6724325">
+            <useCaseMoniker Id="058c13bc-c559-41cb-8331-630979a15a91" LastKnownName="最大、最小、均值、方差、直方图显示" />
+            <elementDefinition Id="56dbb16c-6d5c-410d-a759-a549d6cb5dfc" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="058c13bc-c559-41cb-8331-630979a15a91" name="最大、最小、均值、方差、直方图显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b39822f6-d82f-41cc-b616-2af886403adc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="60e7c568-3ead-4b6e-be09-8cc14fc0d449" name="行列号裁剪" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="985608ce-71a8-4c8d-8ea6-8082e83f8280" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="38404397-7e7d-40b1-8b0e-ad66fae65616" name="地理坐标位置裁剪" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="914878db-aef7-424d-ab97-9a3f4d15d86f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9199cab-9d9e-467f-a796-90a16c36fd99" name="多边形裁剪" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e642e37-1239-493c-88bb-621164e115d7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c8dfb5fc-9f64-4c1d-8ce5-35465b8ea84d" name="MSARProMD">
+    <elementDefinition Id="8b6555f7-f3ee-4297-97bd-e98d82435e9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1cf646d7-f75d-47fa-bfbf-7a25a5c6959a">
+        <profileInstance Id="06c829f6-d3f0-4a27-acff-ea34615d3655" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="89ffc2ec-fe99-4a05-9702-ac64c78cba64">
+        <profileInstance Id="d2d399be-2ac9-418e-a126-6d874f1d4acf" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

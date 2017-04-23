@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="bf4a4351-cd07-413a-8a6b-f34960104bb8" name="ucd-影像显示操作" linkedPackageId="ac091cc9-8a76-4357-aa50-22671ac38363" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ae55d54e-8e2a-4354-8360-07c298b3f5aa" name="地图操作" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8b27d62a-4a66-4699-b6f9-1fb5095d72c5" />
+        <additions>
+          <include Id="af76c8ad-0965-432e-9560-5c2566928b26">
+            <useCaseMoniker Id="1357c8e6-c8bb-40e3-ab10-77c9fe4a9efe" LastKnownName="图层操作" />
+            <elementDefinition Id="41c34d77-39f7-42a4-8a0b-ab03c0ec81b9" />
+          </include>
+          <include Id="ff4c5cea-5794-4001-8051-a82d32c0ecfe">
+            <useCaseMoniker Id="9e2ff3df-1551-4e27-a365-32f08f0d5653" LastKnownName="地图加载" />
+            <elementDefinition Id="b4cd9b39-c455-4756-9885-0ede1f8361f7" />
+          </include>
+          <include Id="a544ff26-8893-42bf-adf9-0854631a8f4b">
+            <useCaseMoniker Id="5537ce40-d157-4e99-8847-674a4f62fa93" LastKnownName="地图基本操作" />
+            <elementDefinition Id="f6f4f83e-f7be-4fe5-a984-f39f2e1e084c" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1357c8e6-c8bb-40e3-ab10-77c9fe4a9efe" name="图层操作" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="01a7b706-f6c3-41bf-9ecc-541c4bd8425c" />
+        <additions>
+          <include Id="570abc67-9654-437c-8dff-c6a06d933626">
+            <useCaseMoniker Id="55c16c1e-aa9b-40f9-9f3a-1eed34e18a07" LastKnownName="图层顺序调整" />
+            <elementDefinition Id="0fe6fc9e-2c63-4361-bb21-82ce4963c8cb" />
+          </include>
+          <include Id="f014c2b5-a063-428d-b359-6560043748cc">
+            <useCaseMoniker Id="d466d652-2f92-44d3-afad-7cbe499d754a" LastKnownName="图层显示和关闭" />
+            <elementDefinition Id="b8e9ced0-0819-4e31-9cee-08e85081e02e" />
+          </include>
+          <include Id="d572ae91-1556-4720-981b-19716ef723d2">
+            <useCaseMoniker Id="45099634-134d-45ae-8323-aa4a34932d49" LastKnownName="图层显示比例设定" />
+            <elementDefinition Id="2b3b157b-a01a-4ebb-8594-a3f2db3414d6" />
+          </include>
+          <include Id="0957cb18-8e6a-46d7-becf-96a353ff7c5f">
+            <useCaseMoniker Id="7e799fc1-272d-4390-bd87-664d39b7a1b9" LastKnownName="图层符号化设定" />
+            <elementDefinition Id="fec04165-30e5-413a-8d0a-c26e41815a81" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ae13bcf-ce98-4162-9142-1333de204180" name="栅格符号设计器" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2656f6a-7f1d-423f-a044-47599d60f530" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="b6d04e9d-aad3-48f5-8755-31463e43ff7e" name="用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89f0dc55-ea98-4968-874d-9ab32b0689c5" />
+        <targetEnds>
+          <association Id="9dae936e-1b3c-4f5a-bfd0-42f905fd7298" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="影像显示操作" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ae55d54e-8e2a-4354-8360-07c298b3f5aa" LastKnownName="地图操作" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e5106be-c2ab-4eac-bab0-cf3b8ac4bf85" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b530bdf6-6cc5-429f-b595-d69372806aad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b47f27dc-5fd3-4991-8d34-843107212d6e" name="影像显示操作" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5c54bbd-f1b9-4555-a09e-58e846086208" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="747e5bf9-aa68-4b1e-9474-243a7a7684b1" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7e799fc1-272d-4390-bd87-664d39b7a1b9" name="图层符号化设定" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1ef3932-3e99-4f98-bc81-36780d1ba98f" />
+        <additions>
+          <include Id="e7c145df-b4f2-4131-b123-7296b0266ae9">
+            <useCaseMoniker Id="00ec9c85-67f7-4eb0-8228-ec5ca45edac7" LastKnownName="栅格数据显示" />
+            <elementDefinition Id="af0ce2cb-236b-440d-bbc4-d6889a2ecc5b" />
+          </include>
+          <include Id="646f51f5-5841-4ea4-b711-f86a69c7ce8d">
+            <useCaseMoniker Id="5d469475-4e39-409c-b1fd-a84be478dba5" LastKnownName="矢量数据符号化" />
+            <elementDefinition Id="c0471887-e57d-4fb7-8975-221b1622b237" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55c16c1e-aa9b-40f9-9f3a-1eed34e18a07" name="图层顺序调整" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1533b8d1-56d9-4c61-9be3-1dd3fdc79e42" />
+        <additions>
+          <include Id="c4dc64b6-3c35-49d5-b1a3-c86c4a72644f">
+            <useCaseMoniker Id="57afd108-830e-4335-844d-0ec0919c3b72" LastKnownName="图层上移和置顶" />
+            <elementDefinition Id="d024299c-35d4-4350-a280-3da13f6915cd" />
+          </include>
+          <include Id="100513ec-2085-4553-8b59-14fe3783267f">
+            <useCaseMoniker Id="b289b434-d3fc-411c-8a88-1d0704114e81" LastKnownName="图层下移和置底" />
+            <elementDefinition Id="842eae75-70a1-4f78-ad04-7343d673963a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="57afd108-830e-4335-844d-0ec0919c3b72" name="图层上移和置顶" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d948528-1a34-4f07-8635-600235af04c7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b289b434-d3fc-411c-8a88-1d0704114e81" name="图层下移和置底" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e833d43f-3273-4f77-b9ad-793569bfc205" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9e2ff3df-1551-4e27-a365-32f08f0d5653" name="地图加载" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e62c508a-49ed-4a70-84ce-717f46537d3e" />
+        <additions>
+          <include Id="87fa377d-e72f-43ab-9603-6a54dd23c2a3">
+            <useCaseMoniker Id="c748a89d-a74b-4a08-a6f0-971612988fd0" LastKnownName="影像数据显示" />
+            <elementDefinition Id="1a7c991c-a94b-40d9-b02f-b4e620535bc7" />
+          </include>
+          <include Id="9e05ec03-fa82-41b1-a78c-7fede049e1d8">
+            <useCaseMoniker Id="90f6ff05-9081-4678-8b45-15e55fe48cff" LastKnownName="栅格数据显示" />
+            <elementDefinition Id="8ef0f9ad-35ac-40a9-8b41-7f364088671f" />
+          </include>
+          <include Id="923bd66e-81f9-4536-bf79-0c0f0c559a3f">
+            <useCaseMoniker Id="be57c15f-ba2d-477f-8955-aad79ddb2d88" LastKnownName="矢量数据显示" />
+            <elementDefinition Id="7a28a723-b812-4c4a-bc27-93b3de90ada5" />
+          </include>
+          <include Id="013483c4-6463-4ad0-b521-fdb8e7e20d7c">
+            <useCaseMoniker Id="efeaa66b-b141-4e10-b2fe-0201f11e4bad" LastKnownName="图像交替显示" />
+            <elementDefinition Id="b8001a77-5e83-4ee8-a589-88b1a87dea9a" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5537ce40-d157-4e99-8847-674a4f62fa93" name="地图基本操作" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e81c5e1e-6ec6-4d6c-97db-9371e9041aa5" />
+        <additions>
+          <include Id="aece0876-7371-4fac-b630-8160a6d25f34">
+            <useCaseMoniker Id="cbfda626-7a7d-4be5-8aee-7a8d9267c6e4" LastKnownName="地图放大、缩小、平移、全局" />
+            <elementDefinition Id="68fae696-933c-47d8-bc98-428fa225b26d" />
+          </include>
+          <include Id="f2a40d83-221e-469a-9f08-caf96b417bd8">
+            <useCaseMoniker Id="991b0036-6be4-4c53-8002-d0cfb932f902" LastKnownName="局部放大" />
+            <elementDefinition Id="fd4bccf6-4a9e-446d-aeae-f8330d3a4e60" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cbfda626-7a7d-4be5-8aee-7a8d9267c6e4" name="地图放大、缩小、平移、全局" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b7408d47-f644-478f-abda-b086b1925244" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="991b0036-6be4-4c53-8002-d0cfb932f902" name="局部放大" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b5cdd0ea-9cf4-4d60-9c86-163811d3d67c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c748a89d-a74b-4a08-a6f0-971612988fd0" name="影像数据显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="30a8dc66-4a1e-44e8-a2fa-a0de31890fdb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="90f6ff05-9081-4678-8b45-15e55fe48cff" name="栅格数据显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0435c114-72f4-4d8d-9b1d-47087d3473de" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be57c15f-ba2d-477f-8955-aad79ddb2d88" name="矢量数据显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e68dd3e7-baba-4b3a-8b63-92f427adf639" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d466d652-2f92-44d3-afad-7cbe499d754a" name="图层显示和关闭" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2bda18cb-6c8a-4909-80d5-828f26b9db72" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45099634-134d-45ae-8323-aa4a34932d49" name="图层显示比例设定" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="733ba34f-64e7-4d6e-8698-ac2683c22ba7" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="00ec9c85-67f7-4eb0-8228-ec5ca45edac7" name="栅格数据显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eeef501c-f1d8-45a0-8738-eea73b247b11" />
+        <suppliersInternal>
+          <dependency Id="2c8ca334-229a-4fad-bdd6-319e1ca04dec">
+            <useCaseMoniker Id="0ae13bcf-ce98-4162-9142-1333de204180" LastKnownName="栅格符号设计器" />
+            <elementDefinition Id="3e39f85d-2da2-4d2f-ae71-fc062c4ceeb1" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="dd3eacd6-16b2-4e45-aa82-027e32530ef7">
+            <useCaseMoniker Id="3df204cd-4d4e-4b5b-8feb-3b8fd41d229e" LastKnownName="单通道图像显示" />
+            <elementDefinition Id="072ce282-1ac1-402d-80e0-32ad84d81fa6" />
+          </include>
+          <include Id="f803309f-8804-4ae8-bc3e-816b402b3852">
+            <useCaseMoniker Id="e1228174-4d59-4829-bf43-637b12a52317" LastKnownName="RGB三通道显示" />
+            <elementDefinition Id="f8579d8c-5e0f-4f3a-b1aa-7cdcde593e03" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5d469475-4e39-409c-b1fd-a84be478dba5" name="矢量数据符号化" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8f42fc1-94fc-4634-82e0-4dc39cdbba3e" />
+        <suppliersInternal>
+          <dependency Id="8c41eec6-7c6b-4e0e-8688-e7bbfa7d8f6e">
+            <useCaseMoniker Id="ba040648-79af-455c-9e26-cfbdf40f11e0" LastKnownName="矢量符号设计器" />
+            <elementDefinition Id="14c5baa6-acc6-40bf-8116-b5d43b64d490" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ba040648-79af-455c-9e26-cfbdf40f11e0" name="矢量符号设计器" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22001626-d1dd-4209-8377-581289a703c4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3df204cd-4d4e-4b5b-8feb-3b8fd41d229e" name="单通道图像显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a24daad5-31d3-47d1-a6f0-31250797a043" />
+        <additions>
+          <include Id="615d97e8-dbbd-4716-a948-fb6f8c993357">
+            <useCaseMoniker Id="40bb33c2-c840-41fb-a249-a25d13d0e0fb" LastKnownName="彩色显示" />
+            <elementDefinition Id="f5d8d96b-d921-4ed8-8847-3700a0b4a38d" />
+          </include>
+          <include Id="b3538a77-c0d1-4976-9e1d-604c524955b8">
+            <useCaseMoniker Id="67677d03-285c-456f-b655-1d1ae52fdfda" LastKnownName="灰度显示" />
+            <elementDefinition Id="ab3ecf06-f817-4c39-9aad-edb499d77c46" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e1228174-4d59-4829-bf43-637b12a52317" name="RGB三通道显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4049b6f1-2255-448d-90e2-54e3cdb23504" />
+        <additions>
+          <include Id="deb2d5e8-3cb2-491f-989d-b20ff4823925">
+            <useCaseMoniker Id="26384c2a-fed8-4990-8491-c02600e22282" LastKnownName="单通道灰度显示" />
+            <elementDefinition Id="af0b113b-6431-42f9-a0e9-bac13871b650" />
+          </include>
+          <include Id="2811ddae-14c2-4f6d-a85f-1d6b4cf38b43">
+            <useCaseMoniker Id="164520c4-f149-4a9e-b34a-c2fca8cd6450" LastKnownName="全色段显示" />
+            <elementDefinition Id="ce58f4e7-2c8c-4dc4-86b1-9c390a1f4eee" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40bb33c2-c840-41fb-a249-a25d13d0e0fb" name="彩色显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0209d285-3824-4d31-923e-6a43d67a0e67" />
+        <suppliersInternal>
+          <dependency Id="546642e6-5fe8-4e1a-b209-4b66482e07b5">
+            <useCaseMoniker Id="e99c991e-2763-4697-9d9e-7f4212fa297d" LastKnownName="单通道彩色调色版" />
+            <elementDefinition Id="6e08092c-57f7-4ad3-970a-f47dccb9e71b" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="67677d03-285c-456f-b655-1d1ae52fdfda" name="灰度显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d59e171-38bd-461c-af65-12bce344ff42" />
+        <suppliersInternal>
+          <dependency Id="d09100e4-59fe-4e9c-a122-e326300b574f">
+            <useCaseMoniker Id="f3d09450-c156-4f4e-8475-39c1dfd6ea24" LastKnownName="单通道灰度调色板" />
+            <elementDefinition Id="eea8cf21-497e-4dcb-a890-7d74685304a8" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26384c2a-fed8-4990-8491-c02600e22282" name="单通道灰度显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d6835b7-591b-495d-99e3-135ef8064044" />
+        <suppliersInternal>
+          <dependency Id="0337306d-229b-4b35-a334-d6d393bddf15">
+            <useCaseMoniker Id="a816af51-4035-41a0-878d-8c43d620f61e" LastKnownName="RGB单通道灰度调色板" />
+            <elementDefinition Id="b7ebb822-1a53-4c34-a84d-5e336054b113" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="164520c4-f149-4a9e-b34a-c2fca8cd6450" name="全色段显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="993cd91f-22a7-4e70-97a6-933f4ccb05d4" />
+        <suppliersInternal>
+          <dependency Id="5b8cf3fb-13cc-44ba-b889-ab969b19a48f">
+            <useCaseMoniker Id="0edab711-5581-47d5-903e-e3b000538c95" LastKnownName="RGB三通道调色版" />
+            <elementDefinition Id="46abf219-17b0-41c8-b7c8-2cf77809b8bd" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e99c991e-2763-4697-9d9e-7f4212fa297d" name="单通道彩色调色版" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f49cffb5-ec30-4a0f-a88b-11af9be5f1c3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f3d09450-c156-4f4e-8475-39c1dfd6ea24" name="单通道灰度调色板" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fbf2c93a-3b30-469c-afd1-5ec47bf95682" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a816af51-4035-41a0-878d-8c43d620f61e" name="RGB单通道灰度调色板" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1ce5c5d8-1661-497c-adc4-5dd797dd94d5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0edab711-5581-47d5-903e-e3b000538c95" name="RGB三通道调色版" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="62d669c6-14e9-47db-a633-64378b911b8a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="efeaa66b-b141-4e10-b2fe-0201f11e4bad" name="图像交替显示" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9468d6bb-7540-4201-adf8-cfaa078bf3d2" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="ac091cc9-8a76-4357-aa50-22671ac38363" name="MSARProMD">
+    <elementDefinition Id="8b6555f7-f3ee-4297-97bd-e98d82435e9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2f4e7fc5-d267-434e-820e-f338c071c696">
+        <profileInstance Id="f598ae73-0997-4355-a575-2f5c2643f10c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9315f5c7-3726-4eb0-91ba-17a55a29f8d5">
+        <profileInstance Id="0f027342-8667-4a73-8122-e3787c429b36" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

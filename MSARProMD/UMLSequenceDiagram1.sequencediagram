@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="694d98ec-7a3e-4135-88f3-dddd96443c87" name="Sequence1" linkedPackageId="8341f454-db0b-4dfc-a8fa-c4aefbcc9b48" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="75d21a9c-7988-489b-a923-6f87a4998c4a" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="5dc2a562-3a0e-40d0-addd-a75f0e417b8d" />
+        <lifelines>
+          <lifeline Id="9ff46301-bf89-4583-a57d-3b25233663dd" name="Lifeline1" isActor="false" lifelineDisplayName="Lifeline1">
+            <elementDefinition Id="32a7bf1a-39a0-4eb1-b468-010aa4641f14" />
+          </lifeline>
+          <lifeline Id="95eae592-70d1-4c15-bf56-3fc515506dec" name="Lifeline2" isActor="false" lifelineDisplayName="Lifeline2">
+            <elementDefinition Id="13d34243-3a2f-43a9-a1c5-1899633b4a31" />
+          </lifeline>
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8341f454-db0b-4dfc-a8fa-c4aefbcc9b48" name="MSARProMD">
+    <elementDefinition Id="8b6555f7-f3ee-4297-97bd-e98d82435e9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="67aef039-ab8b-4696-852f-99dc419774f6">
+        <profileInstance Id="4ad9028a-b45b-4aeb-a713-11bf2b42dd30" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="01a45ec3-6b23-41e6-ba00-f20538c2db24">
+        <profileInstance Id="e8c41a68-5fd0-470d-a3fb-16d2865b42c5" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</SequenceDesignerModel>

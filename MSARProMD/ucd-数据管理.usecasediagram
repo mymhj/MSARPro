@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4b875baf-be56-4428-acd1-cba6f17fb2ba" name="ucd" linkedPackageId="e0a911b9-3ce4-4594-9de8-9521f8d7bf09" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="116b848e-2ebc-4806-a014-55dd1e759fbd" name="用户" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44203104-4fc7-48df-99f1-e5504a413221" />
+        <targetEnds>
+          <association Id="741b2606-b8ca-42ab-9da5-ae5659e7c928" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="影像数据集管理" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1b3cff59-74f5-43b7-a5e9-1089687a8119" LastKnownName="影像数据管理" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="023d258b-67bb-4c05-add7-a340bd82c7af" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b0446eb5-1de5-4034-8ab9-f747deb12d74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3293f10b-590d-498c-8186-95fdfbc058db" name="影像数据集管理" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e4c5eceb-600a-40df-8a97-20dab4f0d27c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d4979aa0-a564-417b-85f2-583c5839aae0" />
+          </association>
+          <association Id="a0bcbeb3-d476-4bee-8a36-2c4648844b29" isDerived="false" sourceEndRoleName="用户" targetEndRoleName="影像数据集同步显示" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ffc1361d-36be-4095-8663-e500da6cfcd8" LastKnownName="矢量数据管理" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6b8660a-e278-4da5-b26c-3a9e9c066c35" name="用户" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d784fb9e-da1a-4365-a2a1-c3e8943e28c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="462b6c1b-fb8f-4a57-8e01-41f8ef29b52a" name="影像数据集同步显示" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd6036f3-f6ef-4e2b-8792-1b3bbed1c0fc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="08f6839b-8169-4abc-99ce-4efa33efce18" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="30eb7e2c-c9ee-4ce4-a41c-42b8e1e9d44f" name="影像数据导入" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="788dc638-a7d5-4169-a31e-efb46d204e93" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8b16c1c5-5ccf-4142-bf11-0f13497f5643" name="影像数据集创建" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5133521d-4928-4dc7-90d2-9bf93973f4cd" />
+        <suppliersInternal>
+          <dependency Id="26727041-572e-4d52-bf6a-48b20a3d9fdd">
+            <useCaseMoniker Id="30eb7e2c-c9ee-4ce4-a41c-42b8e1e9d44f" LastKnownName="影像数据导入" />
+            <elementDefinition Id="8690fb9b-d7b5-4f76-bfb8-3df340286cf1" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3798fe9d-ba59-4372-92f3-c950cebdb406" name="分波段栅格数据创建" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="67d9b3d0-0884-452b-9f7f-edab0894db5e" />
+        <suppliersInternal>
+          <dependency Id="891078c0-42c9-446e-ad0d-6ef2549104de">
+            <useCaseMoniker Id="30eb7e2c-c9ee-4ce4-a41c-42b8e1e9d44f" LastKnownName="影像数据导入" />
+            <elementDefinition Id="52ed0f38-1183-4f27-8354-2beb6e5a8342" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1b3cff59-74f5-43b7-a5e9-1089687a8119" name="影像数据管理" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90e16612-2cd1-497a-995a-983986809c0b" />
+        <additions>
+          <include Id="c22acbea-d326-43a9-a917-c021e7dd26f1">
+            <useCaseMoniker Id="30eb7e2c-c9ee-4ce4-a41c-42b8e1e9d44f" LastKnownName="影像数据导入" />
+            <elementDefinition Id="73d7ed7e-96ed-46f8-9614-8441be42be33" />
+          </include>
+          <include Id="7e53f2d0-492f-4366-b821-936d86a0977d">
+            <useCaseMoniker Id="3b90d448-d3e9-4607-b8f0-a305443ca99e" LastKnownName="影像删除" />
+            <elementDefinition Id="7a268731-a4f3-4b3c-b82e-0fd67d591094" />
+          </include>
+          <include Id="c4d0f7c4-7c8f-4b8b-a8bd-32fc443b701f">
+            <useCaseMoniker Id="e20eeea0-dedb-4a2b-b62e-a5dae2df3a7a" LastKnownName="栅格数据集导出" />
+            <elementDefinition Id="f568e23a-3dd8-446e-a25a-a7950db2065d" />
+          </include>
+          <include Id="86599d8e-e386-434e-88d4-c7453978d335">
+            <useCaseMoniker Id="5f240a8b-b8ad-4a35-9f6b-a515c6db5ca8" LastKnownName="影像数据集导出" />
+            <elementDefinition Id="d7b75f4b-5701-47d1-be34-dbc6bfeae02f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3b90d448-d3e9-4607-b8f0-a305443ca99e" name="影像删除" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="94d594cb-cb3a-4d98-a9da-ff5077b979cf" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b482876-9d7b-4851-9d80-18af68fca66b" name="影像数据删除" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c5eda5b-ee3f-46ca-b0e2-4c0b0220cb49" />
+        <suppliersInternal>
+          <dependency Id="bb9b4707-0d4c-4497-9adc-bc3401ca6312">
+            <useCaseMoniker Id="3b90d448-d3e9-4607-b8f0-a305443ca99e" LastKnownName="影像删除" />
+            <elementDefinition Id="172c4a3d-8b47-4580-bc1d-24a015effa3c" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92218645-1c44-49a2-b393-08fe20fb1879" name="分波段栅格数据删除" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e6195c9-4826-4106-bb2a-6b5c7668a180" />
+        <suppliersInternal>
+          <dependency Id="0042441f-0d7f-4c9f-bfd6-661db3d7a4ea">
+            <useCaseMoniker Id="3b90d448-d3e9-4607-b8f0-a305443ca99e" LastKnownName="影像删除" />
+            <elementDefinition Id="525ed1a8-23c0-47b5-91e6-b16127054b8f" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ffc1361d-36be-4095-8663-e500da6cfcd8" name="矢量数据管理" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c4a3abb-305f-437f-b4d5-2ef3eb6ca9d3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e20eeea0-dedb-4a2b-b62e-a5dae2df3a7a" name="栅格数据集导出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8db12359-44b7-43ff-b8ff-b3382599ea7c" />
+        <additions>
+          <include Id="b6aaa967-200f-4ce6-9919-326433c0f396">
+            <useCaseMoniker Id="a4958bc8-33ae-4e55-8d89-818ab1c65b36" LastKnownName="Tiff格式导出-栅格" />
+            <elementDefinition Id="a2bac976-7694-4b0d-9cff-e8b304397d3e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f240a8b-b8ad-4a35-9f6b-a515c6db5ca8" name="影像数据集导出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bf01fe20-e4d3-4af9-94b1-9fa54c2c4b4b" />
+        <additions>
+          <include Id="3dfabba7-eec3-4a25-b2b2-b0449ce38bfe">
+            <useCaseMoniker Id="fe3f2f43-333a-47d6-accf-7de9f74232f1" LastKnownName="Tiff格式导出" />
+            <elementDefinition Id="6819f063-80a7-4260-b411-5c2f3ebcab7c" />
+          </include>
+          <include Id="d1a65e11-9a55-4712-8748-3c2dbdf2b20c">
+            <useCaseMoniker Id="3bde40ba-1afc-4895-8581-4cffa44fd712" LastKnownName="jpg格式导出" />
+            <elementDefinition Id="278a5fd1-29d0-412e-871a-51cd024363d3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fe3f2f43-333a-47d6-accf-7de9f74232f1" name="Tiff格式导出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="27e78833-7387-4a18-8cc6-bfb48b1521bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3bde40ba-1afc-4895-8581-4cffa44fd712" name="jpg格式导出" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68f83298-e954-437a-be5a-28cc94c9b5d3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a4958bc8-33ae-4e55-8d89-818ab1c65b36" name="Tiff格式导出-栅格" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca8c3f8f-418b-43f4-b532-675a70535644" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e0a911b9-3ce4-4594-9de8-9521f8d7bf09" name="MSARProMD">
+    <elementDefinition Id="8b6555f7-f3ee-4297-97bd-e98d82435e9d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="aabd0f97-e048-40f6-99ad-19d3839c5653">
+        <profileInstance Id="d726d12d-e2b0-44a2-9c19-4201388a2eec" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c3519912-8449-4388-a175-e6eb30d097aa">
+        <profileInstance Id="ea1aebf4-9ce5-4f56-b385-ed13ed596df2" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
